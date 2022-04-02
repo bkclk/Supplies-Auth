@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { connect } from "react-redux";
 import { useEffect } from "react";
-import { token } from "../actions";
+import { token } from "../store/actions";
 const RequireAuth = (props) => {
   const token = JSON.parse(localStorage.getItem("userToken"));
   useEffect(() => {

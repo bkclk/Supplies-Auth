@@ -17,7 +17,7 @@ import {
   BasketItems,
   NavbarBtn,
 } from "./Navbar.style";
-import { deleteToBasket, clearToken, clearBasket } from "../../actions";
+import { deleteToBasket, clearToken, clearBasket } from "../../store/actions";
 import { connect } from "react-redux";
 const Navbar = (props) => {
   const navigate = useNavigate();

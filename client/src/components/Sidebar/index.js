@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, CatH1, CatRow } from "./Sidebar.style";
-import { selectedCategoryId } from "../../actions";
+import { selectedCategoryId } from "../../store/actions";
 import { connect } from "react-redux";
 import axios from "../../axios";
 const Sidebar = (props) => {

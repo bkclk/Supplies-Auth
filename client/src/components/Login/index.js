@@ -3,7 +3,7 @@ import { Label } from "../Register/Register.style";
 import { Container, Card, ErrorP, Form, SigninBtn, FootP } from "./Login.style";
 import axios from "../../axios";
 import { connect } from "react-redux";
-import { token } from "../../actions";
+import { token } from "../../store/actions";
 import { Link } from "react-router-dom";
 
 const Login = (props) => {

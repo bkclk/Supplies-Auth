@@ -7,7 +7,7 @@ import {
   AddIcon,
 } from "./SupplyList.style";
 import { connect } from "react-redux";
-import { getProducts, addToBasket } from "../../actions";
+import { getProducts, addToBasket } from "../../store/actions";
 
 const SupplyList = (props) => {
   useEffect(() => {

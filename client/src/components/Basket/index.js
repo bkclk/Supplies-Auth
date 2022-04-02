@@ -8,7 +8,7 @@ import {
   PriceBox,
   OrderBtn,
 } from "./Basket.style";
-import { deleteToBasket } from "../../actions";
+import { deleteToBasket } from "../../store/actions";
 import { connect } from "react-redux";
 const Basket = (props) => {
   const renderList = () => {

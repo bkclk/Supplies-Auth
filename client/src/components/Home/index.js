@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, BackGround, Title, HomeP, HomeBtn } from "./Home.style";
 import { connect } from "react-redux";
-import { token } from "../../actions";
+import { token } from "../../store/actions";
 
 const Home = (props) => {
   const navigate = useNavigate();
@@ -13,11 +13,7 @@ const Home = (props) => {
     }
   }, []);
   const handleButton = () => {
-    if (props.token.token === undefined) {
-      navigate("login");
-    } else {
-      navigate("supplies");
-    }
+    navigate("supplies");
   };
   return (
     <BackGround>
